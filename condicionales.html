@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamplate</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //Esto esel uso de condicionales sin incluirla en una funcion
+    /*let edad=parseInt(prompt("Dame tu edad"))
+
+    if(edad<=0 || edad>=101){
+        alert("La edad no es valida, debe ser mayor que 0 y menor de 101")
+    }
+    else if(edad>0 && edad<=10){
+        alert("Eres un ninno")
+    }
+    else if(edad>=11 && edad<=17){
+        alert("Eres un adolescente")
+    }
+    else if(edad>=18 && edad<=26){
+        alert("Eres un joven")
+    }
+    else{
+        alert("Eres un adulto")
+    }
+    */
+    //Aqui incluire las condiciones en una funcion
+    function validarEdad(e){
+        if(edad<=0 || edad>=101){
+        alert("La edad no es valida, debe ser mayor que 0 y menor de 101")
+    }
+    else if(edad>0 && edad<=10){
+        alert("Eres un ninno")
+    }
+    else if(edad>=11 && edad<=17){
+        alert("Eres un adolescente")
+    }
+    else if(edad>=18 && edad<=26){
+        alert("Eres un joven")
+    }
+    else{
+        alert("Eres un adulto")
+    }
+
+    }
+
+    let edad2=parseInt(prompt("Dame tu edad"))
+
+    validarEdad(edad2)
+
+</script>

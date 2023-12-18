@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamplate</title>
+</head>
+<body>
+    
+</body>
+</html>  
+
+<script>
+    //funcion normal
+    function saludar(){
+        console.log("Hola esta es una funcion SIN FLECHA")
+    }
+
+    //funcion con flecha
+    const saludar = ()=>{
+        console.log("Hola, esta es una funcion CON FLECHA")
+    }
+    
+    //suma con funcion normal
+    function suma(a,b){
+        console.log(a+b)
+    }
+
+    // suma con funcion de flecha
+    const suma = (a,b) => {
+        console.log (a+b)
+    }
+
+    //cuadrado con funcion de flechas 
+    const cuadrado = x => console.log(x*x)
+    cuadrado (9)
+
+
+    // funcion con valores predeterminados
+    const suma = (a=5,b=10)=>{
+        console.log(a+b)
+
+        suma()
+    }
+</script>

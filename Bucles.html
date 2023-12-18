@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamplate</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    //Muesta una multiplicacion
+    let tabla=parseInt(prompt("Que tabla de multiplicacion quieres mostrar "))
+    let num=parseInt(prompt("Hasta que numero quieres multiplicar"))
+
+    for(x=1;x<=num;x++){
+        console.log(tabla+"x"+x+"="+(numero*x))
+    }
+    
+    //Recorrer el arreglo hasta la cantidad de objetos que tiene 
+    let datos=[1,11,91,9,3,31,33]
+    console.log("El numero de elementos es:"+datos.length)
+
+    for(x=1;x<=datos.length;x++){
+        console.log("Numero de Repeticion:"+x)
+    }
+
+    //Muestra objeto de un arreglo y su correspondiente valor
+    const obj={a: 'Alejo', b: 'Baby', m: 'Migue', r: 'Randy'}
+
+    for(let valor in obj){
+        console.log(${valor}: ${obj[valor]});
+    }
+
+</script>

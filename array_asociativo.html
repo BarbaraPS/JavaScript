@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamplate</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+      //Declaracion de un arreglo
+      let frutas=["Naranja","Platano","Sandia","Manzana "]
+      //Mostar la longitud del arreglo
+      console.log("El numero de elementos es:"+frutas.length)
+      //Mostrar un elemento especifico del arreglo
+      console.log("El primer elemento es:"+frutas[0])
+      
+      //Arreglo asociativo
+      let datos={nom:'Barbara',pa:'Pardo',sa:'Sanchez'}
+      //Muestra todos los elementos del arreglo 
+      console.log(datos)
+      //Muestra un elemento especifico del arreglo 
+      console.log(datos.nom)
+
+      //Recorre todo el arreglo y muestra uno auno los elementos
+      frutas.forEach(function(elemento,indice,array)
+      {
+        console.log('El elemento es:'+elemento)
+        console.log('El indice es:'+indice)
+        console.log('El arreglo es:'+array)
+      }
+    )
+
+    //Agregar un elemento al final
+    let nuevofinal=frutas.push('Fresa')
+    //Comprobando que se adiciono el nuevo elemento 
+    frutas.forEach(function(elemento,indice,array)
+      {
+        console.log(indice,elemento)
+        
+      })
+
+      //Eliminar ultimo elemento
+      let eliminarUltimo=frutas.pop()
+      //Comprobando que se elimino el ultimo elemento 
+      frutas.forEach(function(elemento,indice,array)
+      {
+        console.log(indice,elemento)
+        
+      })
+
+      //Agragando un nuevo elemento al principio del arreglo
+      let agregarPrincipio=frutas.unshift('Mamey')
+      console.log("Se agrega Mamey")
+
+      //Comprobando que se elimino el ultimo elemento 
+      frutas.forEach(function(elemento,indice,array)
+      {
+        console.log(indice,elemento)
+        
+      })
+
+      //Eliminado el primero
+      let eliminarPrimero=frutas.shift()
+
+      frutas.forEach(function(elemento,indice,array)
+    {console.log(indice,elemento)})
+
+    //Buscando un elemento en una posicion
+    let buscarElemento=frutas.indexOf("Naranaja")
+    console.log ("Elemento encontrado en posicion:" +buscarElemento)
+
+    //Eliminando elemento por posicion
+    let eliminarPos=frutas.splice(buscarElemento,1)
+
+    //Copiando el arreglo
+    let frutas2=frutas.slice()
+    console.log("Este es el listado de elementos de frutas2")
+    frutas2.forEach(function(elemento,indice,array){console.log(indice,elemento)})
+
+</script>
